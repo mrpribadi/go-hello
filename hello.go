@@ -1,5 +1,7 @@
 package go_hello
 
-func Hello(Name string) string {
-	return "Hello, "+Name
+import "strconv"
+
+func Hello(Name string, Age int64) string {
+	return "Hello, "+Name+", I'm "+strconv.FormatInt(Age, 10)+" years old"
 }
